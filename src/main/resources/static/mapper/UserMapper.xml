@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper>
+    <resultMap id="BaseResultMap" type="com.school.demo.entity.vo.UserVo">
+
+    </resultMap>
+    <sql id="BaseColumn">
+
+    </sql>
+    <select id="userVoBySo" parameterType="com.school.demo.demo.entity.so.UserSo" resultMap="BaseResultMap">
+        select
+        <include refid="BaseColumn" />
+        from user_tb
+    </select>
+</mapper>
+
